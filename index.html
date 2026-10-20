@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mistvale Tea Co. – Hill-grown Indian teas, honestly made</title>
+  <meta name="description"
+    content="Shop Assam, Darjeeling, Kahwa, masala chai and herbal teas from Mistvale. Prices include GST, delivery across India, 7-day returns on unopened packs.">
+  <link rel="canonical" href="https://mistvale.example/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mistvale Tea Co.">
+  <meta property="og:title" content="Mistvale Tea Co. – Hill-grown Indian teas, honestly made">
+  <meta property="og:description" content="Assam, Darjeeling, Kahwa, masala chai and herbal teas. Prices include GST.">
+  <meta property="og:url" content="https://mistvale.example/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mistvale Tea Co.">
+  <meta name="twitter:description" content="Hill-grown tea, honestly made.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"OnlineStore","name":"Mistvale Tea Co.","url":"https://mistvale.example","slogan":"Hill-grown tea, honestly made.","foundingDate":"2019","email":"hello@mistvale.example","telephone":"+91 90000 12345","sameAs":["https://instagram.com/mistvale.example"],"address":{"@type":"PostalAddress","streetAddress":"14 Hill Cart Road","addressLocality":"Siliguri","addressRegion":"West Bengal","postalCode":"734001","addressCountry":"IN"}}</script>
+  <script type="application/ld+json" id="ld-dyn"></script>
+  <style>
+    :root {
+      --green: #1f3d2b;
+      --leaf: #4f7942;
+      --cream: #f6f1e7;
+      --parch: #ebe2cf;
+      --saffron: #d9962b;
+      --ink: #1b1b1b;
+      --err: #b3261e;
+      --mute: color-mix(in srgb, var(--ink) 74%, var(--cream));
+      --line: color-mix(in srgb, var(--green) 18%, var(--cream));
+      --r: 12px;
+      --s1: 8px;
+      --s2: 16px;
+      --s3: 24px;
+      --s4: 32px;
+      --s6: 48px;
+      --s8: 64px;
+      --h: 'Fraunces', Georgia, serif;
+      --b: 'Inter', system-ui, sans-serif;
+      --e: 200ms ease-out
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font: 400 16px/1.6 var(--b)
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--h);
+      color: var(--green);
+      line-height: 1.15;
+      margin: 0 0 var(--s2);
+      font-weight: 600
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 64px)
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 40px)
+    }
+
+    h3 {
+      font-size: 20px
+    }
+
+    p {
+      margin: 0 0 var(--s2)
+    }
+
+    small,
+    .sm {
+      font-size: 14px
+    }
+
+    .mute {
+      color: var(--mute)
+    }
+
+    a {
+      color: var(--green);
+      text-underline-offset: 3px;
+      transition: color var(--e), text-decoration-color var(--e)
+    }
+
+    a:hover {
+      color: var(--leaf)
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--saffron);
+      outline-offset: 2px
+    }
+
+    .w {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--s2)
+    }
+
+    section {
+      padding: var(--s6) 0
+    }
+
+    @media(min-width:900px) {
+      section {
+        padding: var(--s8) 0
+      }
+    }
+
+    .skip {
+      position: absolute;
+      left: -999px;
+      background: var(--green);
+      color: var(--cream);
+      padding: var(--s1) var(--s2);
+      z-index: 99
+    }
+
+    .skip:focus {
+      left: var(--s2);
+      top: var(--s1)
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--s1);
+      min-height: 44px;
+      padding: 0 var(--s3);
+      border-radius: var(--r);
+      border: 2px solid var(--green);
+      background: var(--green);
+      color: var(--cream);
+      font: 600 16px var(--b);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color var(--e), color var(--e), transform var(--e), box-shadow var(--e)
+    }
+
+    .btn:hover {
+      background: var(--leaf);
+      border-color: var(--leaf);
+      color: var(--cream);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(31, 61, 43, .2)
+    }
+
+    .btn:active {
+      transform: none;
+      box-shadow: none
+    }
+
+    .btn.sec {
+      background: transparent;
+      color: var(--green)
+    }
+
+    .btn.sec:hover {
+      background: var(--green);
+      color: var(--cream);
+      border-color: var(--green)
+    }
+
+    .btn:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+      background: var(--parch);
+      color: var(--mute);
+      border-color: var(--line)
+    }
+
+    .btn.sm {
+      min-height: 44px;
+      padding: 0 var(--s2)
+    }
+
+    .announce {
+      background: var(--green);
+      color: var(--cream);
+      text-align: center;
+      padding: var(--s1) var(--s2);
+      font-size: 14px
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: var(--cream);
+      border-bottom: 1px solid var(--line);
+      transition: box-shadow 250ms ease-out
+    }
+
+    header .w {
+      display: flex;
+      align-items: center;
+      gap: var(--s2);
+      min-height: 64px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: var(--s1);
+      font: 600 24px var(--h);
+      color: var(--green);
+      text-decoration: none;
+      margin-right: auto
+    }
+
+    nav {
+      display: none;
+      gap: var(--s3)
+    }
+
+    @media(min-width:760px) {
+      nav {
+        display: flex
+      }
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 500;
+      padding: var(--s1) 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--e)
+    }
+
+    nav a:hover {
+      border-color: var(--saffron)
+    }
+
+    .ib {
+      position: relative;
+      min-width: 44px;
+      min-height: 44px;
+      display: grid;
+      place-items: center;
+      background: none;
+      border: 0;
+      border-radius: var(--r);
+      color: var(--green);
+      cursor: pointer;
+      transition: background-color var(--e)
+    }
+
+    .ib:hover {
+      background: var(--parch)
+    }
+
+    .ib svg {
+      width: 24px;
+      height: 24px
+    }
+
+    .cnt {
+      position: absolute;
+      top: 2px;
+      right: 0;
+      background: var(--saffron);
+      color: var(--ink);
+      border-radius: 999px;
+      min-width: 20px;
+      height: 20px;
+      font: 600 13px/20px var(--b);
+      text-align: center;
+      padding: 0 4px
+    }
+
+    svg.i {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex: none
+    }
+
+    .hero {
+      background: var(--parch);
+      padding: 0
+    }
+
+    .hero .w {
+      display: grid;
+      gap: var(--s4);
+      padding-top: var(--s6);
+      padding-bottom: var(--s6);
+      align-items: center
+    }
+
+    @media(min-width:900px) {
+      .hero .w {
+        grid-template-columns: 1.05fr 1fr;
+        padding-top: var(--s8);
+        padding-bottom: var(--s8)
+      }
+    }
+
+    .hero-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/3;
+      max-height: 520px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: var(--r);
+      box-shadow: 0 12px 32px rgba(31, 61, 43, .15);
+      animation: in .9s ease-out .3s both;
+    }
+
+    @media(max-width:899px) {
+      .hero-img {
+        aspect-ratio: 16/10;
+        max-height: 320px
+      }
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 46ch
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s2);
+      margin-top: var(--s3)
+    }
+
+    .hero svg.art {
+      width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      display: block
+    }
+
+    @keyframes in {
+      from {
+        opacity: 0;
+        transform: translateY(4px)
+      }
+    }
+
+    .in {
+      animation: in .7s ease-out both
+    }
+
+    .hero .in>* {
+      animation: in .7s ease-out both
+    }
+
+    .hero .in>:nth-child(1) {
+      animation-delay: .1s
+    }
+
+    .hero .in>:nth-child(2) {
+      animation-delay: .25s
+    }
+
+    .hero .in>:nth-child(3) {
+      animation-delay: .4s
+    }
+
+    .hero svg.art {
+      animation: in .9s ease-out .3s both
+    }
+
+    .hero svg.art .sun {
+      animation: sun 1.4s ease-out .6s both
+    }
+
+    @keyframes sun {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: .85
+      }
+    }
+
+    .hero svg.art .hill {
+      animation: in 1s ease-out both
+    }
+
+    .hero svg.art .h2 {
+      animation-delay: .5s
+    }
+
+    .hero svg.art .h3 {
+      animation-delay: .8s
+    }
+
+    .js .rv {
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 500ms ease-out, transform 500ms ease-out
+    }
+
+    .js .rv.on {
+      opacity: 1;
+      transform: none
+    }
+
+    .card {
+      animation: in 350ms ease-out both;
+      animation-delay: calc(var(--i, 0)*50ms)
+    }
+
+    .card .pic {
+      width: 100%;
+      height: 220px;
+      padding: 0;
+      border: none;
+      overflow: hidden;
+      background: none;
+      cursor: pointer;
+    }
+
+    details[open] p {
+      animation: in 250ms ease-out
+    }
+
+    .trust li {
+      transition: transform var(--e)
+    }
+
+    .trust li:hover {
+      transform: translateY(-2px)
+    }
+
+    header.scrolled {
+      box-shadow: 0 4px 16px rgba(31, 61, 43, .12)
+    }
+
+    .cnt.bump {
+      animation: in 250ms ease-out
+    }
+
+    .trust {
+      background: var(--green);
+      color: var(--cream);
+      padding: var(--s3) 0
+    }
+
+    .trust ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--s2)
+    }
+
+    @media(min-width:900px) {
+      .trust ul {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    .trust li {
+      display: flex;
+      gap: var(--s1);
+      font-size: 14px;
+      align-items: flex-start
+    }
+
+    .trust svg {
+      color: var(--saffron);
+      margin-top: 2px
+    }
+
+    .tools {
+      display: grid;
+      gap: var(--s2);
+      margin-bottom: var(--s4)
+    }
+
+    @media(min-width:760px) {
+      .tools {
+        grid-template-columns: 1fr auto auto;
+        align-items: end
+      }
+    }
+
+    label {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: var(--s1)
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 44px;
+      padding: 0 var(--s2);
+      border: 1.5px solid color-mix(in srgb, var(--green) 45%, var(--cream));
+      border-radius: var(--r);
+      background: #fff;
+      font: 400 16px var(--b);
+      color: var(--ink);
+      transition: border-color var(--e), box-shadow var(--e)
+    }
+
+    input:hover,
+    select:hover {
+      border-color: var(--green)
+    }
+
+    input[aria-invalid=true] {
+      border-color: var(--err)
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s1)
+    }
+
+    .chip {
+      min-height: 44px;
+      padding: 0 var(--s2);
+      border-radius: 999px;
+      border: 1.5px solid var(--green);
+      background: transparent;
+      color: var(--green);
+      font: 500 15px var(--b);
+      cursor: pointer;
+      transition: background-color var(--e), color var(--e)
+    }
+
+    .chip:hover {
+      background: var(--parch)
+    }
+
+    .chip[aria-pressed=true] {
+      background: var(--green);
+      color: var(--cream)
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--s2);
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    @media(min-width:760px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--s3)
+      }
+    }
+
+    @media(min-width:1040px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--parch);
+      border-radius: var(--r);
+      overflow: hidden;
+      position: relative;
+      transition: transform var(--e), box-shadow var(--e)
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(31, 61, 43, .15)
+    }
+
+    .card .pic {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: none;
+      cursor: pointer
+    }
+
+    .card .pic svg {
+      display: block;
+      width: 100%;
+      height: auto
+    }
+
+    .card .pic {
+  position: relative;
+  background-color: #e2d8c3; /* Matches your theme's earthy tone */
+  overflow: hidden;
+}
+
+/* Hide the image initially, then fade it in once loaded */
+.card .pic img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Class added automatically when the image finishes loading */
+.card .pic img.loaded {
+  opacity: 1;
+}
+
+    .cb {
+      padding: var(--s2);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1
+    }
+
+    .cb h3 {
+      font-size: 18px;
+      margin: 0
+    }
+
+    .cb .d {
+      font-size: 14px;
+      color: var(--mute);
+      flex: 1;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden
+    }
+
+    .pr {
+      font: 600 18px var(--b);
+      margin-top: var(--s1)
+    }
+
+    .rt {
+      font-size: 14px;
+      color: var(--mute)
+    }
+
+    .cb .btn {
+      margin-top: var(--s1);
+      width: 100%
+    }
+
+    .badge {
+      position: absolute;
+      top: var(--s1);
+      left: var(--s1);
+      background: var(--ink);
+      color: var(--cream);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 2px 12px;
+      border-radius: 999px
+    }
+
+    .heart {
+      position: absolute;
+      top: var(--s1);
+      right: var(--s1);
+      background: var(--cream);
+      border: 0;
+      border-radius: 999px;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      cursor: pointer;
+      transition: background-color var(--e), color var(--e)
+    }
+
+    .heart:hover {
+      background: #fff
+    }
+
+    .heart[aria-pressed=true] {
+      color: var(--saffron)
+    }
+
+    .heart[aria-pressed=true] svg {
+      fill: currentColor
+    }
+
+    .empty {
+      padding: var(--s6) 0;
+      text-align: center
+    }
+
+    .alt {
+      background: var(--parch)
+    }
+
+    .row {
+      display: flex;
+      gap: var(--s1);
+      flex-wrap: wrap;
+      align-items: end
+    }
+
+    .row>div {
+      flex: 1 1 220px;
+      max-width: 360px
+    }
+
+    .msg {
+      margin-top: var(--s1);
+      font-size: 15px;
+      min-height: 24px
+    }
+
+    .msg.err {
+      color: var(--err)
+    }
+
+    .msg.ok {
+      color: var(--leaf);
+      font-weight: 500
+    }
+
+    .rev {
+      display: grid;
+      gap: var(--s3)
+    }
+
+    @media(min-width:900px) {
+      .rev {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    blockquote {
+      margin: 0;
+      background: var(--cream);
+      border-radius: var(--r);
+      padding: var(--s3);
+      font: 500 19px/1.5 var(--h);
+      color: var(--green)
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: var(--s2);
+      font: 400 14px var(--b);
+      color: var(--mute)
+    }
+
+    details {
+      border-bottom: 1px solid var(--line)
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s2);
+      font: 600 18px var(--h);
+      color: var(--green);
+      padding: var(--s1) 0;
+      transition: color var(--e)
+    }
+
+    summary::-webkit-details-marker {
+      display: none
+    }
+
+    summary:hover {
+      color: var(--leaf)
+    }
+
+    summary svg {
+      transition: transform var(--e)
+    }
+
+    details[open] summary svg {
+      transform: rotate(180deg)
+    }
+
+    details p {
+      padding-bottom: var(--s2);
+      max-width: 70ch
+    }
+
+    footer {
+      background: var(--green);
+      color: var(--cream);
+      padding: var(--s6) 0 var(--s4)
+    }
+
+    footer a {
+      color: var(--cream)
+    }
+
+    footer h2 {
+      color: var(--cream);
+      font-size: 28px
+    }
+
+    .legal {
+      font-size: 14px;
+      opacity: .9;
+      max-width: 80ch
+    }
+
+    .scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(27, 27, 27, .5);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--e), visibility var(--e);
+      z-index: 40
+    }
+
+    .scrim.on {
+      opacity: 1;
+      visibility: visible
+    }
+
+    #cart {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: min(420px, 100%);
+      background: var(--cream);
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      visibility: hidden;
+      transition: transform 300ms ease-out, visibility 300ms
+    }
+
+    #cart.on {
+      transform: none;
+      visibility: visible
+    }
+
+    .ch,
+    .cf {
+      padding: var(--s2) var(--s3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .ch {
+      border-bottom: 1px solid var(--line)
+    }
+
+    .ch h2 {
+      margin: 0;
+      font-size: 28px
+    }
+
+    .cbody {
+      flex: 1;
+      overflow: auto;
+      padding: var(--s2) var(--s3)
+    }
+
+    .cf {
+      display: block;
+      border-top: 1px solid var(--line);
+      background: var(--parch)
+    }
+
+    .bar {
+      height: 8px;
+      border-radius: 999px;
+      background: var(--parch);
+      overflow: hidden;
+      margin: var(--s1) 0 var(--s2)
+    }
+
+    .bar i {
+      display: block;
+      height: 100%;
+      background: var(--leaf);
+      transition: width 300ms ease-out
+    }
+
+    .ln {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: var(--s2);
+      padding: var(--s2) 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .ln svg {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px
+    }
+
+    .q {
+      display: inline-flex;
+      align-items: center;
+      border: 1.5px solid var(--green);
+      border-radius: var(--r)
+    }
+
+    .q button {
+      width: 44px;
+      height: 44px;
+      border: 0;
+      background: none;
+      font-size: 20px;
+      color: var(--green);
+      cursor: pointer;
+      border-radius: var(--r);
+      transition: background-color var(--e)
+    }
+
+    .q button:hover:not(:disabled) {
+      background: var(--parch)
+    }
+
+    .q button:disabled {
+      opacity: .35;
+      cursor: not-allowed
+    }
+
+    .q span {
+      min-width: 32px;
+      text-align: center;
+      font-weight: 600
+    }
+
+    .link {
+      background: none;
+      border: 0;
+      color: var(--green);
+      text-decoration: underline;
+      cursor: pointer;
+      font: 400 14px var(--b);
+      min-height: 44px;
+      padding: 0 var(--s1)
+    }
+
+    .link:hover {
+      color: var(--leaf)
+    }
+
+    .tt {
+      display: flex;
+      justify-content: space-between;
+      margin: 4px 0
+    }
+
+    .tt.t {
+      font: 600 20px var(--b);
+      margin-top: var(--s1)
+    }
+
+    dialog {
+      border: 0;
+      border-radius: var(--r);
+      padding: var(--s3);
+      width: min(560px, calc(100% - 32px));
+      background: var(--cream);
+      color: var(--ink)
+    }
+
+    dialog::backdrop {
+      background: rgba(27, 27, 27, .5)
+    }
+
+    dialog svg.pa {
+      width: 100%;
+      height: auto;
+      border-radius: var(--r);
+      margin-bottom: var(--s2)
+    }
+
+    #toast {
+      position: fixed;
+      left: 50%;
+      bottom: var(--s3);
+      transform: translate(-50%, 16px);
+      background: var(--green);
+      color: var(--cream);
+      padding: 12px var(--s3);
+      border-radius: var(--r);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--e), transform var(--e);
+      z-index: 70;
+      max-width: calc(100% - 32px)
+    }
+
+    #toast.on {
+      opacity: 1;
+      transform: translate(-50%, 0)
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition-duration: 1ms !important;
+        scroll-behavior: auto !important
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#shop">Skip to the teas</a>
+  <div class="announce">Free shipping on orders of ₹599 or more after discount. Use WELCOME10 on orders from ₹399.</div>
+  <header>
+    <div class="w">
+      <a class="logo" href="#top" aria-label="Mistvale Tea Co. home"><svg width="32" height="32" viewBox="0 0 32 32"
+          aria-hidden="true">
+          <circle cx="16" cy="16" r="16" fill="#1f3d2b" />
+          <path d="M8 22c0-8 6-13 16-14-1 9-6 15-14 14z" fill="#f6f1e7" />
+          <path d="M9 23c4-5 8-8 12-11" stroke="#4f7942" stroke-width="1.6" fill="none" stroke-linecap="round" />
+        </svg>Mistvale</a>
+      <nav aria-label="Main"><a href="#shop">Shop</a><a href="#delivery">Delivery</a><a href="#reviews">Reviews</a><a
+          href="#faq">FAQ</a></nav>
+      <button class="ib" id="srch" aria-label="Search teas"><svg class="i" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-4-4" />
+        </svg></button>
+      <button class="ib" id="cartbtn" aria-label="Open cart, 0 items"><svg class="i" viewBox="0 0 24 24">
+          <path d="M5 8h14l-1.2 11H6.2zM9 8a3 3 0 0 1 6 0" />
+        </svg><span class="cnt" id="cnt">0</span></button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="w">
+        <div class="in">
+          <h1>Hill-grown tea, honestly made</h1>
+          <p>Malty Assam leaves for your morning cup, a floral Darjeeling first flush for a quiet afternoon. Small-batch
+            teas from the Darjeeling hills, delivered across India.</p>
+          <div class="cta"><a class="btn" href="#shop">Shop the teas</a><a class="btn sec" href="#faq">Read the FAQ</a>
+          </div>
+        </div>
+        <img class="hero-img in" src="./images/home-section.png"
+          alt="Fresh tea leaves and a cup of tea on a wooden table" width="600" height="600" fetchpriority="critical">
+      </div>
+    </section>
+    <div class="trust">
+      <div class="w">
+        <ul>
+          <li><svg class="i" viewBox="0 0 24 24">
+              <path d="M5 12l4 4 10-10" />
+            </svg>Prices include GST</li>
+          <li><svg class="i" viewBox="0 0 24 24">
+              <path d="M5 12l4 4 10-10" />
+            </svg>Unopened packs returnable within 7 days</li>
+          <li><svg class="i" viewBox="0 0 24 24">
+              <path d="M5 12l4 4 10-10" />
+            </svg>Delivery in 2 to 5 working days</li>
+          <li><svg class="i" viewBox="0 0 24 24">
+              <path d="M5 12l4 4 10-10" />
+            </svg>Gift box with a brewing guide</li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="shop">
+      <div class="w">
+        <h2>Our teas</h2>
+        <div class="tools">
+          <div><label for="q">Search teas</label><input id="q" type="search" placeholder="Try Assam or cardamom"
+              autocomplete="off"></div>
+          <div><label for="sort">Sort by</label><select id="sort">
+              <option value="default">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+              <option value="name">Name</option>
+            </select></div>
+          <div class="chips" role="group" aria-label="Filter by category" id="chips"></div>
+        </div>
+        <p class="sm mute" id="status" role="status" aria-live="polite"></p>
+        <ul class="grid" id="grid"></ul>
+      </div>
+    </section>
+
+    <section id="delivery" class="alt">
+      <div class="w">
+        <h2>Check delivery to your pincode</h2>
+        <div class="row">
+          <div><label for="pin">Pincode</label><input id="pin" inputmode="numeric" maxlength="6"
+              autocomplete="postal-code" placeholder="6 digits"></div><button class="btn sec" id="pinbtn">Check
+            delivery</button>
+        </div>
+        <p class="msg" id="pinres" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="w">
+        <h2>What shoppers say</h2>
+        <div class="rev">
+          <blockquote>“Best masala chai I have ever had. Tastes like my nani’s kitchen.”<cite>Ananya, Pune</cite>
+          </blockquote>
+          <blockquote>“The Darjeeling first flush is so fresh. Packaging was lovely too.”<cite>Rohit, Bengaluru</cite>
+          </blockquote>
+          <blockquote>“Bought the sampler as a gift and now my whole family is hooked.”<cite>Meera, Kochi</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="alt">
+      <div class="w">
+        <h2>Questions, answered</h2>
+        <div id="faqlist" style="max-width:800px"></div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="w">
+        <h2>Join the tea club</h2>
+        <p class="mute">Brewing notes and new harvests, in your inbox.</p>
+        <form id="nl" novalidate class="row">
+          <div><label for="nlm">Email address</label><input id="nlm" type="email" autocomplete="email"
+              aria-describedby="nlmsg"></div><button class="btn sec" type="submit">Subscribe</button>
+        </form>
+        <p class="msg" id="nlmsg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="w">
+      <h2>Mistvale Tea Co.</h2>
+      <p>14 Hill Cart Road, Siliguri, West Bengal 734001, India<br><a
+          href="mailto:hello@mistvale.example">hello@mistvale.example</a> · <a href="tel:+919000012345">+91 90000
+          12345</a> · <a href="https://instagram.com/mistvale.example">Instagram</a></p>
+      <!-- LEGAL: approved wording, do not edit (ref MV-LGL-07) -->
+      <p class="legal">All prices are inclusive of GST. Returns are accepted within 7 days of delivery on unopened packs
+        only; opened tea cannot be returned for hygiene reasons. Tea colour and flavour may vary slightly between
+        harvests.</p>
+      <p class="legal">&copy; 2019 Mistvale Tea Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside id="cart" role="dialog" aria-modal="true" aria-labelledby="ct" inert>
+    <div class="ch">
+      <h2 id="ct">Your cart</h2><button class="ib" id="cclose" aria-label="Close cart"><svg class="i"
+          viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6 6 18" />
+        </svg></button>
+    </div>
+    <div class="cbody">
+      <p class="sm" id="shipmsg"></p>
+      <div class="bar"><i id="shipfill"></i></div>
+      <div id="items"></div>
+      <label for="coupon">Coupon code</label>
+      <div class="row" style="flex-wrap:nowrap"><input id="coupon" autocomplete="off" aria-describedby="cpmsg"><button
+          class="btn sec sm" id="cpbtn">Apply</button></div>
+      <p class="msg sm" id="cpmsg" role="status" aria-live="polite"></p>
+    </div>
+    <div class="cf">
+      <div id="totals"></div><button class="btn" id="checkout" style="width:100%;margin-top:var(--s2)">Checkout</button>
+    </div>
+  </aside>
+
+  <form id="checkout-form" action="https://mistvale.example/cart/checkout" method="POST" hidden>
+    <input type="hidden" name="items"><input type="hidden" name="coupon">
+  </form>
+  <dialog id="qv" aria-labelledby="qvt">
+    <div id="qvb"></div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // product data - comes from backend, DO NOT CHANGE ids, names or prices
+    const PRODUCTS = [
+      { id: 101, name: "Assam Breakfast Black Tea", category: "Black", price: 349, stock: 40, image: "images/assam.webp", desc: "Strong, malty CTC tea from Upper Assam estates. Perfect with milk and a little sugar in the morning." },
+      { id: 102, name: "Darjeeling First Flush", category: "Black", price: 1299, stock: 12, image: "images/darjeeling-1.webp", desc: "Delicate, floral spring harvest leaves with a muscatel note. Best without milk.", rating: 4.8, reviews: 128 },
+      { id: 103, name: "Kashmiri Kahwa", category: "Green", price: 549, stock: 25, image: "images/Kashmiri.webp", desc: "Green tea with saffron, cardamom, cinnamon and almond flakes." },
+      { id: 104, name: "Masala Chai Blend", category: "Black", price: 399, stock: 60, image: "images/Masala Chai Blend.webp", desc: "Bold Assam leaves with ginger, cardamom, clove and black pepper. Our bestseller.", rating: 4.7, reviews: 342 },
+      { id: 105, name: "Nilgiri Green Tea", category: "Green", price: 449, stock: 30, image: "images/greentea.webp", desc: "Smooth, grassy green tea from the Blue Mountains of the south." },
+      { id: 106, name: "Chamomile & Tulsi", category: "Herbal", price: 499, stock: 18, image: "images/tulsitea.webp", desc: "Caffeine-free calming blend of chamomile flowers and holy basil." },
+      { id: 107, name: "Hibiscus Rose Infusion", category: "Herbal", price: 599, stock: 0, image: "images/rosetea.webp", desc: "Tangy hibiscus with rose petals. Lovely iced." },
+      { id: 108, name: "Tea Lover's Sampler Gift Box", category: "Gifts", price: 1899, stock: 9, image: "images/teabox.webp", desc: "Six of our favourite teas in a wooden gift box with a brewing guide." }
+    ];
+
+    // ---- API START: simulated store backend. DO NOT CHANGE this block. ----
+    const API = {
+      search: function (query) {
+        const q = String(query).trim().toLowerCase();
+        const delay = Math.max(120, 900 - q.length * 140);
+        return new Promise(function (resolve) {
+          setTimeout(function () {
+            resolve(PRODUCTS.filter(function (p) {
+              return p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q);
+            }).map(function (p) { return p.id; }));
+          }, delay);
+        });
+      },
+      checkPincode: function (pin) {
+        const zones = { '73': 2, '70': 3, '71': 3, '11': 4, '40': 4, '56': 5, '60': 5, '50': 5 };
+        return new Promise(function (resolve, reject) {
+          setTimeout(function () {
+            if (!/^[1-9][0-9]{5}$/.test(String(pin))) return reject(new Error('INVALID_PINCODE'));
+            const days = zones[String(pin).slice(0, 2)];
+            resolve(days ? { serviceable: true, days: days } : { serviceable: false });
+          }, 400 + Math.random() * 600);
+        });
+      }
+    };
+    // ---- API END ----
+
+    const $ = id => document.getElementById(id), MAX = 5, FREE = 599, SHIP = 49;
+    const byId = id => PRODUCTS.find(p => p.id === Number(id));
+    const fmt = n => '₹' + Number(n).toLocaleString('en-IN', { maximumFractionDigits: 2 });
+    const lim = p => Math.min(MAX, p.stock);
+    const store = { get(k) { try { return JSON.parse(localStorage.getItem(k)) } catch (e) { return null } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)) } catch (e) { } } };
+    let cart = (Array.isArray(store.get('mv_cart2')) ? store.get('mv_cart2') : []).map(x => { const p = x && byId(x.id); return p && p.stock > 0 ? { id: p.id, qty: Math.max(1, Math.min(parseInt(x.qty, 10) || 1, lim(p))) } : null }).filter(Boolean);
+    let wish = Array.isArray(store.get('mv_wish')) ? store.get('mv_wish') : [];
+    let couponOn = false, st = { cat: 'all', sort: 'default', q: '', ids: null }, qTok = 0, lastFocus = null;
+
+    // state -> view (search, category and sort always combine; sold out always last)
+    function view() {
+      let l = PRODUCTS.filter(p => (st.cat === 'all' || p.category === st.cat) && (!st.ids || st.ids.includes(p.id)));
+      const cmp = { low: (a, b) => a.price - b.price, high: (a, b) => b.price - a.price, name: (a, b) => a.name.localeCompare(b.name), default: () => 0 }[st.sort];
+      return l.map((p, i) => [p, i]).sort((a, b) => ((a[0].stock === 0) - (b[0].stock === 0)) || cmp(a[0], b[0]) || a[1] - b[1]).map(x => x[0])
+    }
+    const ic = d => `<svg class="i" viewBox="0 0 24 24"><path d="${d}"/></svg>`;
+
+   function render() {
+      const l = view(); $('status').textContent = l.length ? l.length + (l.length === 1 ? ' tea' : ' teas') : '';
+      $('grid').innerHTML = l.length ? l.map((p, i) => {
+        const out = p.stock === 0, w = wish.includes(p.id);
+        return `<li class="card" data-id="${p.id}" style="--i:${Math.min(i, 8)}">
+          ${out ? '<span class="badge">Sold out</span>' : ''}
+          <button class="pic" data-a="qv" aria-label="View details for ${p.name}">
+            <img src="${p.image}" alt="${p.name}" loading="lazy" decoding="async" onload="this.classList.add('loaded')">
+          </button>
+          <button class="heart" data-a="wish" aria-pressed="${w}" aria-label="Save ${p.name} to wishlist">${ic('M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.600-7 10-7 10z')}</button>
+          <div class="cb">
+            <h3>${p.name}</h3>
+            ${p.rating ? `<div class="rt">${p.rating} from${p.reviews} reviews</div>` : ''}
+            <p class="d">${p.desc}</p>
+            <div class="pr">${fmt(p.price)}</div>
+            <button class="btn sec" data-a="add" ${out ? 'disabled' : ''}>${out ? 'Sold out' : 'Add to cart'}</button>
+          </div>
+        </li>`
+      }).join('')
+        : `<li class="empty"><h3>No teas match that</h3><p class="mute">Try a different word or choose another category.</p><button class="btn sec" data-a="reset">Clear search and filters</button></li>`
+    }
+
+    $('chips').innerHTML = ['all', 'Black', 'Green', 'Herbal', 'Gifts'].map(c => `<button class="chip" data-c="${c}" aria-pressed="${c === 'all'}">${c === 'all' ? 'All' : c}</button>`).join('');
+    $('chips').onclick = e => { const c = e.target.closest('[data-c]'); if (!c) return; st.cat = c.dataset.c;[...$('chips').children].forEach(b => b.setAttribute('aria-pressed', b === c)); render() }; $('sort').onchange = e => { st.sort = e.target.value; render() };
+    let tm; $('q').oninput = e => {
+      clearTimeout(tm); const v = e.target.value.trim(), tok = ++qTok;
+      tm = setTimeout(() => {
+        if (!v) { st.ids = null; return render() }
+        API.search(v).then(ids => { if (tok !== qTok) return; st.ids = ids; render() }).catch(() => { if (tok === qTok) { st.ids = null; render() } })
+      }, 200)
+    };
+    $('srch').onclick = () => { $('shop').scrollIntoView(); setTimeout(() => $('q').focus(), 300) }; $('grid').onclick = e => {
+      const b = e.target.closest('[data-a]'); if (!b) return; const li = b.closest('[data-id]'), a = b.dataset.a;
+      if (a === 'reset') { st = { cat: 'all', sort: 'default', q: '', ids: null }; qTok++; $('q').value = ''; $('sort').value = 'default';[...$('chips').children].forEach((c, i) => c.setAttribute('aria-pressed', i === 0)); return render() }
+      const p = byId(li.dataset.id);
+      if (a === 'add') add(p.id);
+      if (a === 'wish') { wish = wish.includes(p.id) ? wish.filter(x => x !== p.id) : wish.concat(p.id); store.set('mv_wish', wish); b.setAttribute('aria-pressed', wish.includes(p.id)) }
+      if (a === 'qv') {
+        lastFocus = b; $('qvb').innerHTML = `<img src="${p.image}" alt="${p.name}" style="width:100%;max-height:250px;object-fit:cover;border-radius:8px;margin-bottom:12px;"><h2 id="qvt">${p.name}</h2><p>${p.desc}</p><p class="pr">${fmt(p.price)} <span class="sm mute">per pack, incl. GST</span></p><div class="cta"><button class="btn sec" data-q="add" ${p.stock ? '' : 'disabled'}>${p.stock ? 'Add to cart' : 'Sold out'}</button><button class="btn sec" data-q="x">Close</button></div>`;
+        $('qvb').dataset.id = p.id; $('qv').showModal()
+      }
+    };
+
+    $('qv').onclick = e => { const a = e.target.dataset && e.target.dataset.q; if (a === 'x' || e.target === $('qv')) $('qv').close(); if (a === 'add') add(Number($('qvb').dataset.id)) }; $('qv').onclose = () => lastFocus && lastFocus.focus();
+
+    // cart
+    function toast(m) { const t = $('toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('on'), 2200) }
+    function save() { store.set('mv_cart2', cart) }
+    function add(id) {
+      const p = byId(id); if (!p || p.stock < 1) return; let l = cart.find(c => c.id === p.id);
+      if (l) { if (l.qty >= lim(p)) return toast('You can add up to ' + lim(p) + ' of ' + p.name + '.'); l.qty++ } else cart.push({ id: p.id, qty: 1 });
+      save(); count(); renderCart(); toast(p.name + ' added to your cart')
+    }
+    function count() { const n = cart.reduce((s, c) => s + c.qty, 0); const cn = $('cnt'); if (cn.textContent != String(n)) { cn.classList.remove('bump'); void cn.offsetWidth; cn.classList.add('bump') } cn.textContent = n; $('cartbtn').setAttribute('aria-label', 'Open cart, ' + n + (n === 1 ? ' item' : ' items')) }
+    function calc() {
+      let sub = 0, el = 0; cart.forEach(c => { const p = byId(c.id); sub += p.price * c.qty; if (p.category !== 'Gifts') el += p.price * c.qty });
+      const disc = couponOn && sub >= 399 ? Math.round(Math.min(150, el * 0.1) * 100) / 100 : 0, after = sub - disc, ship = cart.length && after < FREE ? SHIP : 0;
+      return { sub, el, disc, after, ship, total: Math.round(after + ship) }
+    }
+
+    function renderCart() {
+      const c = calc();
+      $('items').innerHTML = cart.length ? cart.map(l => {
+        const p = byId(l.id); return `<div class="ln" data-id="${p.id}"><img src="${p.image}" alt="${p.name}" style="width:50px;height:50px;object-fit:cover;border-radius:4px;flex-shrink:0;"><div><strong>${p.name}</strong><div class="sm mute">${fmt(p.price)} each</div>
+ <div class="q"><button data-k="m" aria-label="Decrease quantity of ${p.name}" ${l.qty <= 1 ? 'disabled' : ''}>−</button><span aria-live="polite">${l.qty}</span><button data-k="p" aria-label="Increase quantity of ${p.name}" ${l.qty >= lim(p) ? 'disabled' : ''}>+</button></div>
+ <button class="link" data-k="r" aria-label="Remove ${p.name}">Remove</button>${l.qty >= lim(p) ? `<div class="sm mute">Maximum ${lim(p)} per order</div>` : ''}</div></div>`
+      }).join('') : '<p class="mute" style="padding:24px 0">Your cart is empty. Pick a tea to begin.</p>';
+      $('shipmsg').textContent = !cart.length ? 'Free shipping on orders of ' + fmt(FREE) + ' or more after discount.' : c.after >= FREE ? 'You have free shipping.' : 'Add ' + fmt(FREE - c.after) + ' more for free shipping.';
+      $('shipfill').style.width = Math.min(100, c.after / FREE * 100) + '\%'; $('totals').innerHTML = `<div class="tt"><span>Subtotal</span><span>${fmt(c.sub)}</span></div><div class="tt"><span>Discount</span><span>${c.disc ? '−' + fmt(c.disc) : fmt(0)}</span></div><div class="tt"><span>Shipping</span><span>${c.ship ? fmt(c.ship) : 'Free'}</span></div><div class="tt t"><span>Total</span><span>${fmt(c.total)}</span></div>`;
+      $('checkout').disabled = !cart.length
+    }
+
+    $('items').onclick = e => { const b = e.target.closest('[data-k]'); if (!b) return; const i = cart.findIndex(c => c.id === Number(b.closest('[data-id]').dataset.id)), l = cart[i], p = byId(l.id), k = b.dataset.k; if (k === 'p') l.qty = Math.min(l.qty + 1, lim(p)); if (k === 'm') l.qty = Math.max(1, l.qty - 1); if (k === 'r') cart.splice(i, 1); save(); count(); renderCart() }; $('cpbtn').onclick = () => {
+      const code = $('coupon').value.trim().toUpperCase(), m = $('cpmsg'), c = calc(); m.className = 'msg sm err';
+      if (!code) m.textContent = 'Enter a coupon code.';
+      else if (code !== 'WELCOME10') m.textContent = 'That code is not valid.';
+      else if (couponOn) { m.className = 'msg sm ok'; m.textContent = 'WELCOME10 is already applied.' }
+      else if (c.sub < 399) m.textContent = 'WELCOME10 needs a cart of at least ₹399. Add ' + fmt(399 - c.sub) + ' more.';
+      else if (c.el <= 0) m.textContent = 'Gift boxes are not eligible for this code.';
+      else { couponOn = true; m.className = 'msg sm ok'; m.textContent = 'WELCOME10 applied.' }
+      renderCart()
+    };
+
+    $('checkout').onclick = () => {
+      if (!cart.length) return; const f = $('checkout-form');
+      f.items.value = JSON.stringify(cart.map(c => ({ id: c.id, qty: c.qty }))); f.coupon.value = calc().disc > 0 ? 'WELCOME10' : ''; f.submit()
+    };
+
+    function openCart() { lastFocus = document.activeElement; renderCart(); $('cart').inert = false; $('cart').classList.add('on'); $('scrim').classList.add('on'); $('cclose').focus() }
+    function closeCart() { $('cart').classList.remove('on'); $('scrim').classList.remove('on'); $('cart').inert = true; lastFocus && lastFocus.focus() } $('cartbtn').onclick = openCart; $('cclose').onclick = closeCart; $('scrim').onclick = closeCart;
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('cart').classList.contains('on')) closeCart() });
+
+    // delivery check
+    let pTok = 0; $('pinbtn').onclick = () => {
+      const pin = $('pin').value.trim(), r = $('pinres'), b = $('pinbtn'), tok = ++pTok; r.className = 'msg';
+      if (!/^[1-9][0-9]{5}$/.test(pin)) { r.className = 'msg err'; r.textContent = 'Enter a valid 6-digit pincode.'; $('pin').setAttribute('aria-invalid', 'true'); return } $('pin').removeAttribute('aria-invalid'); b.disabled = true; r.textContent = 'Checking…';
+      API.checkPincode(pin).then(x => { if (tok !== pTok) return; r.className = 'msg ok'; r.textContent = x.serviceable ? 'We deliver to ' + pin + ' in about ' + x.days + ' days.' : 'Sorry, ' + pin + ' is not serviceable yet.' })
+        .catch(err => { if (tok !== pTok) return; r.className = 'msg err'; r.textContent = err && err.message === 'INVALID_PINCODE' ? 'That pincode is not valid. Check the 6 digits and try again.' : 'We could not check right now. Please try again.' })
+        .finally(() => { b.disabled = false })
+    };
+    $('pin').onkeydown = e => { if (e.key === 'Enter') $('pinbtn').click() };
+
+    // newsletter
+    $('nl').onsubmit = e => {
+      e.preventDefault(); const i = $('nlm'), m = $('nlmsg'), v = i.value.trim();
+      if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { i.removeAttribute('aria-invalid'); m.className = 'msg ok'; m.textContent = 'Thank you. You are on the list.'; i.value = '' }
+      else { i.setAttribute('aria-invalid', 'true'); m.className = 'msg err'; m.textContent = 'Enter a valid email address, like name@example.com.' }
+    };
+
+    // FAQ + dynamic JSON-LD
+    const FAQ = [["How long does delivery take?", "2 to 5 working days depending on your pincode. Use the delivery check to see yours."], ["Can I return tea?", "Unopened packs can be returned within 7 days of delivery. Opened tea cannot be returned for hygiene reasons."], ["How should I store my tea?", "In an airtight container, away from light, heat and strong smells. It tastes best within 6 months of opening."], ["Is Chamomile & Tulsi caffeine-free?", "Yes, it is a caffeine-free herbal blend."], ["Do you ship outside India?", "Not yet. We currently deliver within India only."], ["Can I send tea as a gift?", "Yes. The Tea Lover's Sampler comes in a wooden gift box with a brewing guide."]];
+    $('faqlist').innerHTML = FAQ.map(f => `<details><summary>${f[0]}${ic('m6 9 6 6 6-6')}</summary><p>${f[1]}</p></details>`).join('');
+    $('ld-dyn').textContent = JSON.stringify([{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map(f => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) }].concat(PRODUCTS.map(p => { const o = { "@context": "https://schema.org", "@type": "Product", name: p.name, description: p.desc, brand: { "@type": "Brand", name: "Mistvale" }, offers: { "@type": "Offer", price: p.price, priceCurrency: "INR", availability: p.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock" } }; if (p.rating) o.aggregateRating = { "@type": "AggregateRating", ratingValue: p.rating, reviewCount: p.reviews }; return o })));
+
+    render(); count(); renderCart();
+
+    // motion: scroll reveals and header shadow
+    document.documentElement.classList.add('js');
+    const rv = document.querySelectorAll('.trust,main section:not(.hero)>.w'); rv.forEach(el => el.classList.add('rv'));
+    if ('IntersectionObserver' in window) { const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('on'); io.unobserve(x.target) } }), { threshold: .08 }); rv.forEach(el => io.observe(el)) } else rv.forEach(el => el.classList.add('on'));
+    addEventListener('scroll', () => document.querySelector('header').classList.toggle('scrolled', scrollY > 8), { passive: true });
+  </script>
+</body>
+
+</html>
